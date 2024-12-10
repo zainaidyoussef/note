@@ -1,0 +1,163 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  background: #CDD5DB;
+  min-height: 100vh;
+}
+.list .top-buttons {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+.list .top-buttons button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.list .top-buttons button.btn-add-note {
+  background-color: #4f5866;
+}
+.list .top-buttons button.btn-add-note:hover {
+  background-color: #848d9a;
+}
+.list .top-buttons button.btn-logout {
+  background-color: #bfc9b1;
+}
+.list .top-buttons button.btn-logout:hover {
+  background-color: #d2d8ca;
+}
+.list h2 {
+  margin: 80px 0 20px;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.list .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+.list .card {
+  background: #f4efea;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.list .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.list .card .card-title {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+.list .card .card-content {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+.list .card .card-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.list .card .card-actions button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.list .card .card-actions button:disabled {
+  background-color: #bdc3c7;
+  color: #ecf0f1;
+  cursor: not-allowed;
+}
+.list .card .card-actions button:nth-child(1) {
+  background-color: #d6c8b2;
+}
+.list .card .card-actions button:nth-child(1):hover {
+  background-color: #f8e2c8;
+}
+.list .card .card-actions button:nth-child(2) {
+  background-color: #a3b3bd;
+}
+.list .card .card-actions button:nth-child(2):hover {
+  background-color: #d0e7f5;
+}
+.list .add-note-form,
+.list .edit-note-form {
+  margin: 20px 0;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.list .add-note-form input,
+.list .add-note-form textarea,
+.list .edit-note-form input,
+.list .edit-note-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #dcdfe3;
+  border-radius: 5px;
+}
+.list .add-note-form input:focus,
+.list .add-note-form textarea:focus,
+.list .edit-note-form input:focus,
+.list .edit-note-form textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+.list .add-note-form textarea,
+.list .edit-note-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+.list .add-note-form button,
+.list .edit-note-form button {
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.list .add-note-form button.btn-save-note, .list .add-note-form button.btn-save-edit,
+.list .edit-note-form button.btn-save-note,
+.list .edit-note-form button.btn-save-edit {
+  background-color: #4B6382;
+}
+.list .add-note-form button.btn-save-note:hover, .list .add-note-form button.btn-save-edit:hover,
+.list .edit-note-form button.btn-save-note:hover,
+.list .edit-note-form button.btn-save-edit:hover {
+  background-color: #8397b1;
+}
+.list .add-note-form button.btn-cancel, .list .add-note-form button.btn-cancel-edit,
+.list .edit-note-form button.btn-cancel,
+.list .edit-note-form button.btn-cancel-edit {
+  background-color: #977f68;
+}
+.list .add-note-form button.btn-cancel:hover, .list .add-note-form button.btn-cancel-edit:hover,
+.list .edit-note-form button.btn-cancel:hover,
+.list .edit-note-form button.btn-cancel-edit:hover {
+  background-color: #aa947f;
+}/*# sourceMappingURL=NotesPage.css.map */
